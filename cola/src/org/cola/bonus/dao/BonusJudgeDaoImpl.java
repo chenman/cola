@@ -174,7 +174,7 @@ public class BonusJudgeDaoImpl extends DaoImpl implements BonusJudgeDao {
         sb.append("       round(sum(t1.avg_score * t1.weight) / sum(t1.weight), 6) 得分");
         sb.append("  from (select t1.month_id,");
         sb.append("               t1.staff_id,");
-        sb.append("               if(t2.staff_type = 1, 0.7, 0.3) weight,");
+        sb.append("               if(t2.staff_type = 1, 0.5, 0.5) weight,");
         sb.append("               round(avg(t1.wld_score), 6) avg_wld_score,");
         sb.append("               round(avg(t1.dfc_score), 6) avg_dfc_score,");
         sb.append("               round(avg(t1.qua_score), 6) avg_qua_score,");
