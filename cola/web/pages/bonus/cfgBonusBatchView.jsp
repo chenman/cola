@@ -64,6 +64,7 @@
         }
         var last_month = new Date(year, month);
 
+//         document.getElementById("edit_month_id").value = "201410";
         document.getElementById("edit_month_id").value = last_month
             .Format('YYYYMM');
         document.getElementById("edit_month_id").readOnly = true;
