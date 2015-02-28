@@ -105,8 +105,8 @@
 
     function checkDfc(e) {
         var dfc_score = e.value.trim();
-    	if (dfc_score == "" || isNaN(dfc_score) || dfc_score < 0 || dfc_score > 35) {
-            alert("难度得分不为空，且需为0~35的数值!");
+    	if (dfc_score == "" || isNaN(dfc_score) || dfc_score < 0 || dfc_score > 25) {
+            alert("难度得分不为空，且需为0~25的数值!");
             e.value = "";
             e.focus();
     	}
@@ -114,8 +114,8 @@
 
     function checkQua(e) {
         var qua_score = e.value.trim();
-    	if (qua_score == "" || isNaN(qua_score) || qua_score < 0 || qua_score > 15) {
-            alert("完成情况得分不为空，且需为0~15的数值!");
+    	if (qua_score == "" || isNaN(qua_score) || qua_score < 0 || qua_score > 25) {
+            alert("完成情况得分不为空，且需为0~25的数值!");
             e.value = "";
             e.focus();
     	}
@@ -174,14 +174,14 @@
                 return false;
         	}
 
-        	if (dfc_score == "" || isNaN(dfc_score) || dfc_score < 0 || dfc_score > 35) {
-                alert("难度得分不为空，且需为0~35的数值!");
+        	if (dfc_score == "" || isNaN(dfc_score) || dfc_score < 0 || dfc_score > 25) {
+                alert("难度得分不为空，且需为0~25的数值!");
                 document.getElementsByName("dfc_score")[i].focus();
                 return false;
         	}
 
-        	if (qua_score == "" || isNaN(qua_score) || qua_score < 0 || qua_score > 15) {
-                alert("完成情况得分不为空，且需为0~15的数值!");
+        	if (qua_score == "" || isNaN(qua_score) || qua_score < 0 || qua_score > 25) {
+                alert("完成情况得分不为空，且需为0~25的数值!");
                 document.getElementsByName("qua_score")[i].focus();
                 return false;
         	}
@@ -254,8 +254,8 @@
                                 <th>工号</th>
                                 <th>姓名</th>
                                 <th>工作量得分0~50</th>
-                                <th>难度得分0~35</th>
-                                <th>完成质量得分0~15</th>
+                                <th>难度得分0~25</th>
+                                <th>完成质量得分0~25</th>
                                 <th>总分</th>
                             </tr>
                         </table>
