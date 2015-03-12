@@ -188,9 +188,9 @@
         	score = Number(wld_score) + Number(dfc_score) + Number(qua_score);
         	if (score >= 90) {
         	    ++a_cnt;
-        	} else if (score >= 85 && score < 90) {
+        	} else if (score >= 80 && score < 90) {
                 ++b_cnt;
-            } else if (score >= 75 && score < 85) {
+            } else if (score >= 70 && score < 80) {
                 ++c_cnt;
             } else {
                 ++d_cnt;
@@ -265,7 +265,7 @@
                     <td>
                         <table width="100%" border="0" cellpadding="0" cellspacing="0">
                         <tr>
-                            <td align="left"><font id="desc">分布规则：90分及以上2人，85-89分4人，75-84分5人，75分以下1人!</font></td>
+                            <td align="left"><font id="desc">分布规则：90分及以上2人，80-89分4人，70-79分5人，69分以下1人!</font></td>
                             <td align="right">
                             <input id="save" class="td_Input"
                                 name="save" type="button"
