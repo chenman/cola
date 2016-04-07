@@ -135,4 +135,20 @@ select t1.month_id 月份,
   left join cfg_supp_staff_info t2
     on t1.staff_id = t2.staff_id
  group by t1.month_id, t1.staff_id, t2.staff_name
- order by t1.month_id, round(sum(t1.avg_score * t1.weight) / sum(t1.weight), 6) desc
+ order by t1.month_id, round(sum(t1.avg_score * t1.weight) / sum(t1.weight), 6) desc;
+ 
+ CREATE TABLE `cfg_supp_staff_info_his` (
+  `staff_id` int(11) DEFAULT NULL,
+  `staff_name` varchar(64) CHARACTER SET utf8 DEFAULT NULL,
+  `passwd` varchar(32) CHARACTER SET utf8 DEFAULT NULL,
+  `org_id` int(11) DEFAULT NULL,
+  `staff_type` int(11) DEFAULT NULL,
+  `create_time` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+insert into cfg_supp_staff_info_his
+select * from cfg_supp_staff_info where staff_id in (4000054, 4001086);
+commit;
+
+delete from cfg_supp_staff_info where staff_id in (4000054, 4001086);
+commit;
