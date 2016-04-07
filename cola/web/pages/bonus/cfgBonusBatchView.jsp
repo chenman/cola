@@ -64,7 +64,7 @@
         }
         var last_month = new Date(year, month);
 
-//         document.getElementById("edit_month_id").value = "201410";
+//         document.getElementById("edit_month_id").value = "201602";
         document.getElementById("edit_month_id").value = last_month
             .Format('YYYYMM');
         document.getElementById("edit_month_id").readOnly = true;
@@ -208,7 +208,7 @@
         	    v_qua_score += ',' + qua_score;
         	}
         }
-        if (userType != 2 && (a_cnt != 2 || b_cnt != 4 || c_cnt != 5 || d_cnt != 1)) {
+        if (userType != 2 && (a_cnt != 2 || b_cnt != 3 || c_cnt != 4 || d_cnt != 1)) {
             alert("不符合评分分布规则!");
             return false;
         }
@@ -265,7 +265,7 @@
                     <td>
                         <table width="100%" border="0" cellpadding="0" cellspacing="0">
                         <tr>
-                            <td align="left"><font id="desc">分布规则：90分及以上2人，80-89分4人，70-79分5人，69分以下1人!</font></td>
+                            <td align="left"><font id="desc">分布规则：90分及以上2人，80-89分3人，70-79分4人，69分以下1人!</font></td>
                             <td align="right">
                             <input id="save" class="td_Input"
                                 name="save" type="button"
